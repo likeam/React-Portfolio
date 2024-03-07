@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 export default function App() {
   return (
-  <div>
+  <div className="flex flex-col gap-40 bg-gradient-to-b from-black to-slate-800 ">
     <Navbar />
     <Home />
     <About />

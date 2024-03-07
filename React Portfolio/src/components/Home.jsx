@@ -1,5 +1,6 @@
 import React from 'react';
 import second from '../assets/AbdulRhman.png'
+import {Link} from "react-scroll";
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
@@ -14,17 +15,17 @@ const Home = () => {
                     I'm a Full Stack Develper
                 </h2>
                 <p className='text-gray-500 py-4 max-w-md '>
-                    I have 8 years of experience building and desgining software.
+                    I have 3 years of experience building and desgining software.
                     Currently, I love to work on web application using technologies like
                     React, Tailwind and Next JS .
                 </p>
                 <div>
-                    <button className='text-white w-fit px-6 py-3 my-2 flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer  ' >
+                    <Link to='portfolio' smooth duration={500} className='text-white w-fit px-6 py-3 my-2 flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer  ' >
                         Portfolio
                         <span className='hover:rotate-90 duration-300'>
                             <MdOutlineKeyboardArrowRight size={25} /> 
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div>
