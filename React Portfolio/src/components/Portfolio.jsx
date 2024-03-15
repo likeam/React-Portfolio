@@ -1,6 +1,6 @@
 import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from '../assets/portfolio/installNode.jpg';
+import Resturent from "../assets/portfolio/Resturent.png";
+import ReactECommerce from '../assets/portfolio/React-E-Commerce.png';
 import navbar from '../assets/portfolio/navbar.jpg';
 import reactParallax from '../assets/portfolio/reactParallax.jpg';
 import reacSmooth from '../assets/portfolio/reactSmooth.jpg';
@@ -14,11 +14,11 @@ const Portfolio = () => {
     const pportfolios =[
         {
             id: 1,
-            src: arrayDestruct,
+            src: Resturent,
         },
         {
             id: 2,
-            src:installNode, 
+            src:ReactECommerce, 
         },
         {
             id: 3,
@@ -40,26 +40,26 @@ const Portfolio = () => {
     ]
   return (
     <div name="portfolio" 
-         className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-scree"    
+         className="w-full text-white bg-gradient-to-b from-black to-gray-800 md:h-scree"    
         >
-        <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full" >
+        <div className="flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto" >
             <div className='pb-8'>
-                <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+                <p className="inline text-4xl font-bold border-b-4 border-gray-500">
                     Portfolio
                 </p>
                 <p className='py-6'>
                     Check out some of my work right here
                 </p>
             </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+            <div className="grid gap-8 px-12 sm:grid-cols-2 md:grid-cols-3 sm:px-0">
                 {
                     pportfolios.map(({id, src}) => (
-                        <div key={id} className='shadow-md shadow-gray-600 rounded-lg'  >
+                        <div key={id} className='rounded-lg shadow-md shadow-gray-600'  >
                             <img   
                                 src={src} alt='weather'       
-                                className='rounded-md duration-200 hover:scale-110'                 
+                                className='duration-200 rounded-md hover:scale-110'                 
                             />                    
-                            <div className='flex justify-center items-center'>
+                            <div className='flex items-center justify-center'>
                                 <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>Demo</button>
                                 <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>Code</button>
                             </div>
