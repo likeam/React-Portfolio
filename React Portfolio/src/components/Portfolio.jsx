@@ -1,8 +1,8 @@
 import React from 'react'
 import Resturent from "../assets/portfolio/Resturent.png";
 import ReactECommerce from '../assets/portfolio/React-E-Commerce.png';
-import navbar from '../assets/portfolio/navbar.jpg';
-import reactParallax from '../assets/portfolio/reactParallax.jpg';
+import DesiResturent from '../assets/portfolio/DesiResturent.png';
+import Travlings from '../assets/portfolio/Travlings.png';
 import reacSmooth from '../assets/portfolio/reactSmooth.jpg';
 import reactWeather from '../assets/portfolio/reactWeather.jpg';
 import usestate from '../assets/portfolio/usestate.jpg';
@@ -22,11 +22,11 @@ const Portfolio = () => {
         },
         {
             id: 3,
-            src: navbar,
+            src: DesiResturent,
         },
         {
             id: 4,
-            src: reactParallax,
+            src: Travlings,
         },
         {
             id: 5,
