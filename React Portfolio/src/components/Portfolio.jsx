@@ -3,8 +3,8 @@ import Resturent from "../assets/portfolio/Resturent.png";
 import ReactECommerce from '../assets/portfolio/React-E-Commerce.png';
 import DesiResturent from '../assets/portfolio/DesiResturent.png';
 import Travlings from '../assets/portfolio/Travlings.png';
-import reacSmooth from '../assets/portfolio/reactSmooth.jpg';
-import reactWeather from '../assets/portfolio/reactWeather.jpg';
+import Weather from '../assets/portfolio/Weather.png';
+import Portfolios from '../assets/portfolio/Portfolio.png';
 import usestate from '../assets/portfolio/usestate.jpg';
 
 
@@ -15,26 +15,38 @@ const Portfolio = () => {
         {
             id: 1,
             src: Resturent,
+            code:'https://github.com/likeam/Resturent',
+            demo: 'https://gujranwalaresturent.netlify.app/',
         },
         {
             id: 2,
             src:ReactECommerce, 
+            code:'https://github.com/likeam/React-E-Commerce',
+            demo: 'https://ecommercear.netlify.app/',
         },
         {
             id: 3,
             src: DesiResturent,
+            code:'https://github.com/likeam/desi-resturent',
+            demo: 'https://desiresturent.netlify.app/',
         },
         {
             id: 4,
             src: Travlings,
+            code:'https://github.com/likeam/Travling',
+            demo: 'https://travlingpakistan.netlify.app/',
         },
         {
             id: 5,
-            src: reacSmooth,
+            src: Weather,
+            code:'https://github.com/likeam/Weathr',
+            demo: 'https://weatherar.netlify.app/',
         },
         {
             id: 6,
-            src: reactWeather,
+            src: Portfolios,
+            code:'https://github.com/likeam/React-Portfolio',
+            demo: 'https://engrabdulrehman.netlify.app/',
         },
         
     ]
@@ -53,15 +65,15 @@ const Portfolio = () => {
             </div>
             <div className="grid gap-8 px-12 sm:grid-cols-2 md:grid-cols-3 sm:px-0">
                 {
-                    pportfolios.map(({id, src}) => (
+                    pportfolios.map(({id, src, code, demo}) => (
                         <div key={id} className='rounded-lg shadow-md shadow-gray-600'  >
                             <img   
                                 src={src} alt='weather'       
                                 className='duration-200 rounded-md hover:scale-110'                 
                             />                    
                             <div className='flex items-center justify-center'>
-                                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>Demo</button>
-                                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>Code</button>
+                                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'><a href={demo}>Demo</a></button>
+                                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'><a href={code}>Code</a></button>
                             </div>
                          </div>              
             

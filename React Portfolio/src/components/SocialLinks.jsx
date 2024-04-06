@@ -2,7 +2,7 @@ import React from 'react'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-
+import cv from "../assets/resume/ARCV.pdf"
 
 const SocialLinks = () => {
 
@@ -15,7 +15,7 @@ const SocialLinks = () => {
                 LinkdIn<FaLinkedin size={30} />
             </>
          ),
-         href: "https://linkedin.com",
+         href: "https://www.linkedin.com/in/abdul-rehman-b27a13241/",
          style: "rounded-tr-md",
         },
         {
@@ -25,7 +25,7 @@ const SocialLinks = () => {
                    GitHub<FaGithub size={30} />
                </>
             ),
-            href: "https://github.com",
+            href: "https://github.com/likeam",
            },
            {
             id: 3,
@@ -43,7 +43,7 @@ const SocialLinks = () => {
                    Resume<BsFillPersonLinesFill size={30} />
                </>
             ),
-            href: "/resume.pdf",
+            href: {cv},
             style: "rounded-tr-md",
             download:true,
            },
@@ -57,7 +57,7 @@ const SocialLinks = () => {
             {
                 links.map(({id, child, href, style, download}) =>(
                     <li key={id} className='ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 flex justify-between items-center w-40 h-14 px-4  bg-gray-400 '>
-                        <a href={href} className='flex justify-between items-center w-full text-white' >
+                        <a href={href} className='flex items-center justify-between w-full text-white' >
                             {child}
                         </a>
                     </li>
